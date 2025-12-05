@@ -39,7 +39,7 @@ function MyCoursesInner() {
       ) : (
         <Grid container spacing={3}>
           {myCourses.map((c) => (
-            <Grid item xs={12} sm={6} md={4} key={c.id}>
+            <Grid size={{ xs: 12, sm: 6, md: 4 }} key={c.id}>
               <Paper sx={{ overflow: 'hidden' }}>
                 <img src={c.image} alt={c.title} style={{ width: '100%', height: 160, objectFit: 'cover' }} />
                 <div style={{ padding: 12 }}>

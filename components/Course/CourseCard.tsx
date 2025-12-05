@@ -9,7 +9,8 @@ import Chip from '@mui/material/Chip';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import { Course } from '../../data/courses';
+import { Course } from '@/types/course';
+
 import Rating from '@mui/material/Rating';
 import { useCart } from '../../context/CartContext';
 import Snackbar from '@mui/material/Snackbar';

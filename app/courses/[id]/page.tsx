@@ -55,7 +55,7 @@ export default function CourseDetailPage() {
   return (
     <Container sx={{ py: 6 }}>
       <Grid container spacing={4}>
-        <Grid item xs={12} md={8}>
+        <Grid size={{ xs: 12, md: 8 }}>
           <Typography variant="h4" sx={{ fontWeight: 700 }}>{course.title}</Typography>
           <Stack direction="row" spacing={2} alignItems="center" sx={{ mt: 1, mb: 2 }}>
             <Chip label={course.category} />
@@ -88,7 +88,7 @@ export default function CourseDetailPage() {
           <Typography variant="body1" sx={{ whiteSpace: 'pre-line', mb: 3 }}>{course.description}</Typography>
         </Grid>
 
-        <Grid item xs={12} md={4}>
+        <Grid size={{ xs: 12, md: 4 }}>
           <Box sx={{ position: { md: 'sticky' }, top: { md: 96 }, alignSelf: 'start' }}>
             <Paper sx={{ overflow: 'hidden' }}>
               <Box sx={{ position: 'relative', cursor: 'pointer' }} onClick={() => setOpenVideo(true)}>

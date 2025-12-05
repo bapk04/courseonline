@@ -1,14 +1,5 @@
-// data/courses.ts
-export interface Course {
-  id: string;
-  title: string;
-  description: string; // short 2 lines
-  image: string;       // high-quality Unsplash/Bing URL
-  category: string;    // e.g. 'Development', 'Design', 'Marketing'
-  rating: number;      // e.g. 4.8
-  price: string;       // e.g. '$19.99'
-  videoUrl: string;    // embed Youtube URL (for iframe)
-}
+import { Course } from '@/types/course';
+
 
 export const courses: Course[] = [
   {
